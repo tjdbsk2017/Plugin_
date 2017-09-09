@@ -1,10 +1,33 @@
-* { margin:0; padding:0;}
+* { margin:0; padding:0; font-family: 'Noto Sans', 'Roboto', sans-serif;}
 
 li {list-style: none;}
 a {text-decoration: none;}
 
-.box {
-    width: 100px;
-    height: 100px;
-    background-color: firebrick;
+.container {
+    
+}
+header {
+    height: 80px;
+    background-color: #000;
+    
+}
+header h1 {
+    color: #fff;
+    font-size: 36px;
+    float: left;
+    line-height: 80px;
+    margin: 0 60px;
+}
+.category {
+}
+.category li {
+    float: left;
+    
+}
+.category li a{
+    color: #fff;
+    font-weight: 700;
+    font-size: 16px;
+    margin-right: 40px;
+    line-height: 80px;
 }
