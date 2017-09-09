@@ -3,31 +3,80 @@
 li {list-style: none;}
 a {text-decoration: none;}
 
-.container {
+body{
+    color: #222;
+}
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
     
 }
 header {
-    height: 80px;
-    background-color: #000;
+    height: 74px;
+    background-color: #161b1e;
     
 }
 header h1 {
-    color: #fff;
-    font-size: 36px;
     float: left;
-    line-height: 80px;
     margin: 0 60px;
+    height: 74px;
+    width: 200px;
+    text-align: center;
+    color: #fff;
+    line-height: 74px;
+    letter-spacing: 5px;
+    font-weight: normal;
 }
-.category {
-}
-.category li {
+header .category {
     float: left;
+    height: 36px;
+    margin: 19px 0;
+}
+header .category > li {
+    float: left;
+    position: relative;
     
 }
-.category li a{
+header .category > li > a{
+    display: block;
+    padding: 0 20px;
+    height: 36px;
+    line-height: 36px;
     color: #fff;
-    font-weight: 700;
-    font-size: 16px;
-    margin-right: 40px;
-    line-height: 80px;
+}
+header .category > li:hover > a{
+    background-color: #96da47;
+}
+.sub {
+    width: 500px;
+    background-color: #282d30;
+    padding: 20px;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border-top: 1px solid #96da47;
+}
+.submenu {
+    float: left;
+    width: 25%;
+}
+.submenu li {
+    
+}
+.submenu li a {
+    color: #eee;
+    display: block;
+    height: 28px;
+    line-height: 28px;
+    font-size: 14px;
+}
+.submenu li a:hover {
+    color: #96da47;
+}
+.submenu li .subtitle {
+    margin-bottom: 10px;
+    color: #fff;
+    font-size: 15px;
 }
