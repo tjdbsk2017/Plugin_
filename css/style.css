@@ -91,5 +91,7 @@ header .category > li:hover .sub {
 }
 .slider .banner {
     width: 100%;
-    
+}
+.owl-carousel {
+    display: block;
 }
