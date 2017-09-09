@@ -49,7 +49,14 @@ header .category > li > a{
 header .category > li:hover > a{
     background-color: #96da47;
 }
+header .category > li:hover .sub {
+    visibility: visible;
+    transform: translateY(0px);
+    opacity: 1;
+    transition: all .6s ease;
+}
 .sub {
+    visibility: hidden;
     width: 500px;
     background-color: #282d30;
     padding: 20px;
@@ -57,6 +64,8 @@ header .category > li:hover > a{
     top: 100%;
     left: 0;
     border-top: 1px solid #96da47;
+    transform: translateY(30px);
+    opacity: 0;
 }
 .submenu {
     float: left;
@@ -79,4 +88,8 @@ header .category > li:hover > a{
     margin-bottom: 10px;
     color: #fff;
     font-size: 15px;
+}
+.slider .banner {
+    width: 100%;
+    
 }
