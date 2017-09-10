@@ -71,9 +71,6 @@ header .category > li:hover .sub {
     float: left;
     width: 25%;
 }
-.submenu li {
-    
-}
 .submenu li a {
     color: #eee;
     display: block;
@@ -94,4 +91,148 @@ header .category > li:hover .sub {
 }
 .owl-carousel {
     display: block;
+}
+/* deal */
+#dealsection {
+    padding: 40px 0;
+    background-color: #96da47;
+}
+.deal {
+    height: 46px;
+    text-align: center;
+    line-height: 46px;
+}
+.deal > div {
+    display: inline-block;
+    vertical-align: middle; /*inline*/
+}
+.deal .deal_title {
+    color: #fff;
+    font-family: impact;
+    font-size: 30px;
+}
+.deal .dash {
+    width: 40px;
+    height: 1px;
+    background-color: #222;
+}
+.deal .deal_desc {
+    font-size: 24px;
+}
+.deal .deal_btn {
+    position: relative;
+    margin-left: 20px;
+    width: 140px;
+    background-color: #fff;
+    color: #222;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.deal_btn::after {
+    content: 'VIEW ALL OFFERS'; /*가상선택자의 필수속성*/
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #000;
+    /* z-index: -1; */
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: all .4s ease;
+}
+.deal_btn:hover::after {
+    transform: scaleY(1);
+    color: #fff;
+}
+
+#productView{
+    padding-top: 80px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.product_title{
+    text-align: center;
+    font-family: impact;
+    font-size: 30px;
+}
+.under_line{
+    margin: 20px auto 30px;
+    width: 30px;
+    height: 1px;
+    background-color: #ccc;
+}
+/* view */
+.product_view{
+    padding: 80px 0;
+}
+.view_item {
+    width: 25%;
+    float: left;
+}
+.view_inner {
+    margin:  0 15px;
+}
+.view_inner .dp, .view_inner .motion {
+    width: 100%;
+}
+.thumnails {
+    position: relative;
+}
+.thumnails img {
+    display: block; /*아래공백을 없애기 위해*/
+}
+.thumnails .motion {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+}
+
+.image {
+    position: relative;
+    
+}
+.block {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 3px 2px;
+    box-sizing: border-box;
+}
+.block_list li {
+    width: 40px;
+    height: 40px;
+    background-color: #fff;
+    float: left;
+    margin: 0 1px;
+    text-align: center;
+    line-height: 40px;
+    
+}
+.block_list li.cart {
+    width: calc(100% - 86px);
+}
+/* 기능 */
+.view_inner .image {
+    overflow: hidden;
+}
+.block {
+    transform: translateY(46px);
+    transition: all .4s ease;
+}
+.view_inner:hover .block {
+    transform: translate(0px);
+}
+.thumnails{
+    perspective: 500px;
+}
+.motion {
+    transform: scale(0.8) rotateY(90deg);
+    transition: all .5s ease;
+}
+.thumnails:hover .motion {
+    transform: scale(1) rotateY(0deg);
 }
